@@ -176,9 +176,10 @@ sup {
 }
 
 .box {
+    position: relative;
     float: left;
     font-size: 16px;
-    padding: 0 20px 0 0;
+    padding-right: 20px;
     font-family: 'Lato', sans-serif;
     background-color: #ffffff;
     border-radius: 25px;
