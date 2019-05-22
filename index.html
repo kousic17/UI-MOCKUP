@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fengyuanchen.github.io/datepicker/css/datepicker.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Submit Bills</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#">
+            <div class="dots">
+                <span class="dots__item"></span>
+                <span class="dots__item"></span>
+                <span class="dots__item"></span>
+            </div>
+        </a>
+    </nav>
+    <div class="navbar">
+    <div class="icon">
+      <img src="file:///H:/UX/Juntrax%20Solutions/gem.svg" height="22" width="22" alt="icon">
+      <i class="fas fa-search"></i><input class="search" type="text" placeholder="find..">
+  </div>
+  </div>
+  <div class="header">
+  <a href="#" class="header-link">
+    <div class="header-link-label">23:14, Thursday, Feb 26, 2018</div>
+  </a>
+  <a href="#" class="header-icon">
+    <div class="header-icon-label"><img src="H:\UX\Juntrax Solutions\Notif.png" height="22" width="22"><sup>3</sup></div>
+  </a>
+  <div id="circle"></div>
+</div>
+  <div class="sidenav">
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Home.png" height="22" width="22" alt="icon"></a>
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Files.png" height="22" width="22" alt="icon"></a>
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Stack.png" height="22" width="22" alt="icon"></a>
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Users.png" height="22" width="22" alt="icon"></a>
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Chats.png" height="22" width="22" alt="icon"></a>
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Message.png" height="22" width="22" alt="icon"></a>
+    <a href="#"><img src="H:\UX\Juntrax Solutions\Wave.png" height="22" width="22" alt="icon"></a>
+  </div>
+  <div class="title">Your Expenses</div>
+  <div class="expense">
+    <div class="card" style="padding-right: 155px;">
+      <div class="card-body">
+        <h1 class="card-title">&#8377; 6,000</h1>
+        <h6 class="total">10 Bills Received</h6>
+        <a href="#">See Breakup</a>
+        <img src="H:\UX\Juntrax Solutions\Checklist.png" height="65" width="65" alt="icon" style="left: 100%;">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">&#8377; 2,566</h1>
+        <h6 class="total">8 Bills Approved</h6>
+        <a href="#">View Bills</a>
+        <img src="H:\UX\Juntrax Solutions\Meeting.png" height="65" width="65" alt="icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">&#8377; 2,696</h1>
+        <h6 class="total">3 Bills Pending</h6>
+        <a href="#">View Bills</a>
+        <img src="H:\UX\Juntrax Solutions\Delivery-Truck.png" height="65" width="65" alt="icon">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">&#8377; 1,650</h1>
+        <h6 class="total">2 Bills Were Failed</h6>
+        <a href="#">View Bills</a>
+        <img src="H:\UX\Juntrax Solutions\Work.png" height="65" width="65" alt="icon">
+      </div>
+    </div>
+  </div>
+  <div class="path">
+    <div class="box">
+      <a href="#">
+        <div class="title1">All Bills</div>
+      </a>
+        <a href="#" class="title2">Pending Bills</a>
+        <a href="#" class="title3">Bill Reports</a>
+    </div>
+  </div>
+<button type="button" class="btn add" data-toggle="modal" data-target="#exampleModalCenter">
+  <i class="fa fa-plus"></i>
+  <div class="new">Add New</div>
+</button>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title">ADD YOUR BILLS</p>
+        <small class="small">Submit Your Extra Expenses/Bills for Reimbersement</small>
+        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+            <label for="BillName" class="col-sm-3 col-form-label">Bill Name</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="BillName" placeholder="Team Lunch at Starbucks">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="PaidType" class="col-sm-3 col-form-label">Paid Type</label>
+            <div class="col-sm-6">
+              <select class="form-control">
+                <option value="0">Choose One</option>
+                <option value="1">Cash</option>
+                <option value="2">Debit/Credit Card</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Amount" class="col-sm-3 col-form-label">Amount (&#8377;)</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="Amount" placeholder="3390.47">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="DateOfBill" class="col-sm-3 col-form-label">Date Of Bill</label>
+            <div class="col-sm-6">
+              <span class="calendar"><img src="H:\UX\Juntrax Solutions\Calendar.png" height="22" width="22" alt="icon"></span>
+              <input type="text" class="form-control" id="DateOfBill" data-toggle="datepicker" placeholder="10/10/2018">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="AttachYourBills" class="col-sm-3 col-form-label">Attach Your Bills</label>
+            <div class="col-sm-6">
+              <div id="drop-area">
+                <form class="myForm">
+                  <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                  <p style="font-family: 'Lato', sans-serif; color: #9a9a9a; font-size: 16px; margin-top: 15px;">Drag Files here</p>
+                  <p style="font-family: 'Lato', sans-serif; color: #9a9a9a; font-size: 16px;">Or</p>
+                  <label class="button" for="fileElem">Select Files</label>
+                  <div id="gallery"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn cancel">cancel</button>
+          <button type="button" class="btn save">SAVE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">        
+  <div class="header-title">Bill Name</div>
+  <div class="header-title1">Paid By</div>
+  <div class="header-title2">Date of Bill</div>
+  <div class="header-title3">Date of Submission</div>
+  <div class="header-title4">Amount (&#8377;)</div>
+  <div class="header-title5">Verified Status</div>
+  <div class="header-title6">Status</div>
+<hr>
+<div class="rect">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Team Lunch at Starbucks</div>
+  <div class="pay">Cash</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">10 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag">&#9873;</div>
+  <div class="circle"></div>
+  <div class="status">Complete</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect1">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Cloud Space Storage</div>
+  <div class="pay">Credit Card</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">08 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag">&#9873;</div>
+  <div class="circle1"></div>
+  <div class="status">Pending</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect2">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Team Lunch at Starbucks</div>
+  <div class="pay">Cash</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">10 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag1">&#9873;</div>
+  <div class="circle2"></div>
+  <div class="status">Pending</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect3">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Cloud Space Storage</div>
+  <div class="pay">Credit Card</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">08 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag2">&#9873;</div>
+  <div class="circle3"></div>
+  <div class="status">Failed</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect4">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Team Lunch at Starbucks</div>
+  <div class="pay">Cash</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">10 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag">&#9873;</div>
+  <div class="circle"></div>
+  <div class="status">Complete</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect5">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Cloud Space Storage</div>
+  <div class="pay">Credit Card</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">08 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag">&#9873;</div>
+  <div class="circle"></div>
+  <div class="status">Complete</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect6">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Team Lunch at Starbucks</div>
+  <div class="pay">Cash</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">10 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag">&#9873;</div>
+  <div class="circle"></div>
+  <div class="status">Complete</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect7">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Cloud Space Storage</div>
+  <div class="pay">Debit Card</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">08 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag">&#9873;</div>
+  <div class="circle1"></div>
+  <div class="status">Pending</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+<div class="rect8">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio">
+    </label>
+  </div>
+  <div class="name">Team Lunch at Starbucks</div>
+  <div class="pay">Cash</div>
+  <div class="date">10 Oct 2018</div>
+  <div class="sub">10 Oct 2018</div>
+  <div class="amount">3390.47</div>
+  <div class="flag2">&#9873;</div>
+  <div class="circle3"></div>
+  <div class="status">Failed</div>
+  <a href="#"><div class="dot">&#8226;&#8226;&#8226;</div></a>
+</div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://fengyuanchen.github.io/datepicker/js/datepicker.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
